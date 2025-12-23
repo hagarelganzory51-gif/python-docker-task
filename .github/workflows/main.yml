@@ -1,4 +1,5 @@
 name: Build and Push to Docker Hub
+
 on:
   push:
     branches: [ "main" ]
@@ -21,4 +22,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/my-python-app:latest
+          # استبدلي كلمة hagarelganzory باسمك الحقيقي في دوكر هب لو كان مختلف
+          tags: hagarelganzory/my-python-app:latest
